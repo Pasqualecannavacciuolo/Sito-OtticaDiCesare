@@ -1,0 +1,70 @@
+@import "../../../node_modules/swiper/swiper.min.css";
+
+/* SWIPER */
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CUSTOM */
+.card {
+  width: 100%;
+  height: fit-content;
+  border: none;
+  box-shadow:
+  0.3px 0px 2.7px rgba(0, 0, 0, 0.03),
+  0.8px 0px 6.9px rgba(0, 0, 0, 0.021),
+  1.6px 0px 14.2px rgba(0, 0, 0, 0.017),
+  3.3px 0px 29.2px rgba(0, 0, 0, 0.013),
+  9px 0px 80px rgba(0, 0, 0, 0.009);
+}
+
+.card img {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.btn {
+  background-color: #222;
+  border: none;
+  padding: 3px 13px;
+  font-size: 13px;
+  font-weight: 300;
+}
