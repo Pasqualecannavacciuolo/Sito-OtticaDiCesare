@@ -10,7 +10,7 @@ SwiperCore.use([Pagination]);
   selector: 'app-slideshow',
   template: `<swiper
     [slidesPerView]="2"
-    [spaceBetween]="30"
+    [spaceBetween]="10"
     [pagination]="{
       clickable: true
     }"
