@@ -30,17 +30,7 @@ export class DiscountComponent implements OnInit {
       prezzo: 195,
       immagine: '../../../assets/img/Products/gg0808s_001.png'
     }
-    let prod4 = {
-      codice: 'GG0811S',
-      prezzo: 345,
-      immagine: '../../../assets/img/Products/gucci-gg0516s.png'
-    }
-    let prod5 = {
-      codice: 'GG0812S',
-      prezzo: 569,
-      immagine: '../../../assets/img/Products/gg0808s_001.png'
-    }
-    tmp_array.push(prod1, prod2, prod3, prod4, prod5);
+    tmp_array.push(prod1, prod2, prod3);
     tmp_array.forEach(element => {
       this.discountedProducts.push(element);
     });
