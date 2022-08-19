@@ -9,12 +9,14 @@ import { LastAddedComponent } from './carousel/last-added/last-added.component';
 // Module for custom slideshow
 import { SwiperModule } from 'swiper/angular';
 import { SlideshowComponent } from './carousel/slideshow/slideshow.component';
+import { DiscountComponent } from './carousel/discount/discount.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LastAddedComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    DiscountComponent
   ],
   imports: [
     BrowserModule,

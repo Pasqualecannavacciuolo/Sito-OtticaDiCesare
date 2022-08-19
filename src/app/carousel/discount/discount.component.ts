@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-last-added',
-  templateUrl: './last-added.component.html',
-  styleUrls: ['./last-added.component.css']
+  selector: 'app-discount',
+  templateUrl: './discount.component.html',
+  styleUrls: ['./discount.component.css']
 })
-export class LastAddedComponent implements OnInit {
+export class DiscountComponent implements OnInit {
 
   constructor() { }
 
   componentName: string = '';
-  lastAddedProducts: any[] = [];
+  discountedProducts: any[] = [];
 
   ngOnInit(): void {
-    this.componentName = this.constructor.name;
+    this.componentName = this.constructor.name
     let tmp_array = [];
     let prod1 = {
       codice: 'GG0808S',
@@ -42,8 +42,9 @@ export class LastAddedComponent implements OnInit {
     }
     tmp_array.push(prod1, prod2, prod3, prod4, prod5);
     tmp_array.forEach(element => {
-      this.lastAddedProducts.push(element);
+      this.discountedProducts.push(element);
     });
+
   }
 
 }

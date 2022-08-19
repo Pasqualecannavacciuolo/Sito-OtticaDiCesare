@@ -1,11 +1,18 @@
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { SwiperComponent } from "swiper/angular";
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+//import { SwiperComponent } from "swiper/angular";
+
 // import Swiper core and required modules
 import SwiperCore, { Pagination, Autoplay } from "swiper";
+
 // install Swiper modules
 SwiperCore.use([Pagination]);
 SwiperCore.use([Autoplay]);
 
+interface Product {
+  codice: string,
+  prezzo: number,
+  immagine: string
+}
 
 @Component({
   selector: 'app-slideshow',
@@ -22,122 +29,13 @@ SwiperCore.use([Autoplay]);
     }"
     class="mySwiper"
   >
-    <ng-template swiperSlide>
+    <ng-template swiperSlide *ngFor="let product of products">
       <div class="card">
-        <img src="../../assets/img/Products/gg0808s_001.png" class="card-img-top" alt="...">
+        <div *ngIf="componentName == 'DiscountComponent'" class="discount_image" alt="discount image"></div>
+        <img src={{product.immagine}} class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-    <div class="card">
-        <img src="../../assets/img/Products/gucci-gg0516s.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">250€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="card">
-        <img src="../../assets/img/Products/gg0808s_001.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-    <div class="card">
-        <img src="../../assets/img/Products/gucci-gg0516s.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="card">
-        <img src="../../assets/img/Products/gg0808s_001.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-    <div class="card">
-        <img src="../../assets/img/Products/gucci-gg0516s.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="card">
-        <img src="../../assets/img/Products/gg0808s_001.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-    <div class="card">
-        <img src="../../assets/img/Products/gucci-gg0516s.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="card">
-        <img src="../../assets/img/Products/gg0808s_001.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-    <div class="card">
-        <img src="../../assets/img/Products/gucci-gg0516s.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="card">
-        <img src="../../assets/img/Products/gg0808s_001.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
-          <a href="#" class="btn btn-primary">Compra</a>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-    <div class="card">
-        <img src="../../assets/img/Products/gucci-gg0516s.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Prodotto</h5>
-          <p class="card-text">200€</p>
+          <h5 class="card-title">{{product.codice}}</h5>
+          <p class="card-text">{{product.prezzo}}</p>
           <a href="#" class="btn btn-primary">Compra</a>
         </div>
       </div>
@@ -148,9 +46,13 @@ SwiperCore.use([Autoplay]);
 })
 export class SlideshowComponent implements OnInit {
 
+  @Input() componentName = '';
+  @Input() products: Product[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.products)
   }
 
 }
