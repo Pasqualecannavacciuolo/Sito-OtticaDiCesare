@@ -52,7 +52,7 @@ export class SlideshowComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.componentName)
+
   }
 
 }
