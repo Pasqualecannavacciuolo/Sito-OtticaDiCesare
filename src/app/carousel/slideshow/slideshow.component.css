@@ -70,7 +70,7 @@
 }
 
 .discount_image {
-  background-image: url('/Sito/src/assets/img/discount.svg');
+  background-image: url('../../../assets/img/discount.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
