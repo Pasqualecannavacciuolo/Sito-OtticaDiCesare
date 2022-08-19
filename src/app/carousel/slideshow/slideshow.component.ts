@@ -35,7 +35,7 @@ interface Product {
         <img src={{product.immagine}} class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{product.codice}}</h5>
-          <p class="card-text">{{product.prezzo}}</p>
+          <p class="card-text">{{product.prezzo}}€</p>
           <a href="#" class="btn btn-primary">Compra</a>
         </div>
       </div>
