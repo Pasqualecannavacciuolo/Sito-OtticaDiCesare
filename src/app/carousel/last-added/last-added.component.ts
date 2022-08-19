@@ -9,11 +9,9 @@ export class LastAddedComponent implements OnInit {
 
   constructor() { }
 
-  componentName: string = '';
   lastAddedProducts: any[] = [];
 
   ngOnInit(): void {
-    this.componentName = this.constructor.name;
     let tmp_array = [];
     let prod1 = {
       codice: 'GG0808S',

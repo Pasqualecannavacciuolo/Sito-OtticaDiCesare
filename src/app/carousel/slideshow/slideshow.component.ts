@@ -31,7 +31,7 @@ interface Product {
   >
     <ng-template swiperSlide *ngFor="let product of products">
       <div class="card">
-        <div *ngIf="componentName === 'DiscountComponent'" class="discount_image" alt="discount image"></div>
+        <div *ngIf="componentName != ''" class="discount_image" alt="discount image"></div>
         <img src={{product.immagine}} class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{product.codice}}</h5>
