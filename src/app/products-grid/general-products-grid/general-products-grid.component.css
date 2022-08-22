@@ -1,0 +1,14 @@
+.row {
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+  border: none;
+  box-shadow:
+  0.3px 0px 2.7px rgba(0, 0, 0, 0.03),
+  0.8px 0px 6.9px rgba(0, 0, 0, 0.021),
+  1.6px 0px 14.2px rgba(0, 0, 0, 0.017),
+  3.3px 0px 29.2px rgba(0, 0, 0, 0.013),
+  9px 0px 80px rgba(0, 0, 0, 0.009);
+}

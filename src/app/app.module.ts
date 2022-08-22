@@ -12,6 +12,9 @@ import { SlideshowComponent } from './carousel/slideshow/slideshow.component';
 import { DiscountComponent } from './carousel/discount/discount.component';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
+import { GeneralCategoriesComponent } from './carousel/general-categories/general-categories.component';
+import { SlideshowCategoriesComponent } from './carousel/slideshow-categories/slideshow-categories.component';
+import { GeneralProductsGridComponent } from './products-grid/general-products-grid/general-products-grid.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { HomeComponent } from './home/home.component';
     SlideshowComponent,
     DiscountComponent,
     ProductsComponent,
-    HomeComponent
+    HomeComponent,
+    GeneralCategoriesComponent,
+    SlideshowCategoriesComponent,
+    GeneralProductsGridComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: row
+}
+
+.btn {
+  border: none;
+  background-color: #222;
+}
