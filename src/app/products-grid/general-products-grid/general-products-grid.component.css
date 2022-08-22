@@ -4,7 +4,7 @@
 
 .card {
   width: auto;
-  height: fit-content;
+  height: auto;
   text-align: center;
   margin: 5px;
   border: none;
@@ -17,9 +17,5 @@
 }
 
 .card-img-top {
-  padding: 30px;
-}
-
-.card-title {
-  margin: 15px 0;
+  padding: 20px;
 }

@@ -29,7 +29,7 @@ SwiperCore.use([Autoplay]);
     </ng-template>
   </swiper>`,
   styleUrls: ['./slideshow-categories.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class SlideshowCategoriesComponent implements OnInit {
 

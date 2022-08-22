@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-general-categories',
   templateUrl: './general-categories.component.html',
-  styleUrls: ['./general-categories.component.css']
+  styleUrls: ['./general-categories.component.css'],
 })
 export class GeneralCategoriesComponent implements OnInit {
 
