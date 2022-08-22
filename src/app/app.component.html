@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
+          <a class="nav-link active" [routerLink]="'/'" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Link</a>
+          <a class="nav-link" [routerLink]="'/products'" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Prodotti</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,17 +39,5 @@
   </div>
 </nav>
 
-
-<!-- HERO SECTION -->
-<div class="p-5 mb-4 rounded-3 hero">
-  <div class="container-fluid py-5">
-    <h1 class="display-6 fw-bold hero-title">Scopri i prodotti</h1>
-    <p class="col-md-8 hero-text">Un catalogo accuratamente selezionato tra i migliori marchi</p>
-    <button class="btn btn-primary" type="button">Scopri</button>
-  </div>
-</div>
-
-<app-last-added></app-last-added>
-<app-discount></app-discount>
 
 <router-outlet></router-outlet>

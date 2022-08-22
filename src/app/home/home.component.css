@@ -1,0 +1,26 @@
+.hero {
+  background-image: url('../../assets/img/hero.png');
+  background-position: center;
+  width: fit-content;
+  max-width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 23px;
+}
+
+.hero-text {
+  font-size: 15px;
+}
+
+.btn {
+  background-color: #222;
+  border: none;
+  padding: 5px 13px;
+}

@@ -10,13 +10,17 @@ import { LastAddedComponent } from './carousel/last-added/last-added.component';
 import { SwiperModule } from 'swiper/angular';
 import { SlideshowComponent } from './carousel/slideshow/slideshow.component';
 import { DiscountComponent } from './carousel/discount/discount.component';
+import { ProductsComponent } from './products/products.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LastAddedComponent,
     SlideshowComponent,
-    DiscountComponent
+    DiscountComponent,
+    ProductsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
