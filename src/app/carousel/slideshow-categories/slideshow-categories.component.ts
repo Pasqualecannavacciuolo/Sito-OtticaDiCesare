@@ -21,15 +21,15 @@ SwiperCore.use([Autoplay]);
     class="mySwiper"
   >
     <ng-template swiperSlide *ngFor="let category of categories">
-      <div class="card">
+      <div class=" category-card">
         <div class="card-body">
-          <a href="#"><h5 class="card-title">{{category}}</h5></a>
+          <a class="category-a" href="#"><h5 class="category-card-title">{{category}}</h5></a>
         </div>
       </div>
     </ng-template>
   </swiper>`,
   styleUrls: ['./slideshow-categories.component.css'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.None
 })
 export class SlideshowCategoriesComponent implements OnInit {
 

@@ -1,12 +1,13 @@
-.row {
+.products-grid-row {
   margin: 0 auto;
 }
 
-.card {
+.product-card {
   width: auto;
   height: auto;
   text-align: center;
   margin: 5px;
+  padding: 5px;
   border: none;
   box-shadow:
   0.3px 0px 2.7px rgba(0, 0, 0, 0.03),
@@ -16,6 +17,20 @@
   9px 0px 80px rgba(0, 0, 0, 0.009);
 }
 
-.card-img-top {
+.product-img {
   padding: 20px;
+}
+
+.product-code {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.product-price {
+  font-weight: 500;
+}
+
+.product-link {
+  text-decoration: none;
+  color: #222;
 }

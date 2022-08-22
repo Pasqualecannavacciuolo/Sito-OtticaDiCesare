@@ -27,7 +27,7 @@
 }
 
 /***** CUSTOM *****/
-.card {
+.category-card {
   width: 100%;
   height: 70px;
   position: relative;
@@ -40,7 +40,7 @@
   9px 0px 80px rgba(0, 0, 0, 0.009);
 }
 
-.card-title {
+.category-card-title {
   font-size: 13px;
   margin: 0;
   position: absolute;
@@ -50,7 +50,7 @@
   transform: translate(-50%, -50%);
 }
 
-a {
+.category-a {
   text-decoration: none;
   color: inherit;
 }
