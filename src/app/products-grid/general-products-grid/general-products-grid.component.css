@@ -3,7 +3,10 @@
 }
 
 .card {
+  width: auto;
+  height: fit-content;
   text-align: center;
+  margin: 5px;
   border: none;
   box-shadow:
   0.3px 0px 2.7px rgba(0, 0, 0, 0.03),
@@ -11,4 +14,12 @@
   1.6px 0px 14.2px rgba(0, 0, 0, 0.017),
   3.3px 0px 29.2px rgba(0, 0, 0, 0.013),
   9px 0px 80px rgba(0, 0, 0, 0.009);
+}
+
+.card-img-top {
+  padding: 30px;
+}
+
+.card-title {
+  margin: 15px 0;
 }
